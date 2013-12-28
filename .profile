@@ -1,11 +1,17 @@
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # load all .sh files in this directory
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-for f in $DIR/*.sh
-do
- source $f
-done
+load_files () 
+{
+    DIR=$1
+    echo "I am loading files now in " $DIR
+    for f in $DIR/*.sh
+    do
+     source $f
+    done
+}
 
 load_gopath () 
 {
@@ -23,3 +29,6 @@ load_gopath ()
         GOPATH=$HOME
     fi
 }
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+load_files $DIR
