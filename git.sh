@@ -9,6 +9,7 @@
 alias gpush='git push origin'
 alias gpull='git pull origin'
 
+alias gs='git status'
 # alias gfs='/usr/bin/ruby ~/shell/git-flow.rb start'
 # alias gff='/usr/bin/ruby ~/shell/git-flow.rb finish'
 
