@@ -1,7 +1,8 @@
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # load all .sh files in this directory
-for f in ~/shell/*.sh
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+for f in $DIR/*.sh
 do
  source $f
 done
