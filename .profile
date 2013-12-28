@@ -23,16 +23,3 @@ load_gopath ()
         GOPATH=$HOME
     fi
 }
-
-# override 
-cd () 
-{
-    builtin cd "$@";
-    local result=$?;
-    __rvm_project_rvmrc;
-    __rvm_after_cd;
-
-    # load_gopath
-
-    return $result
-}
