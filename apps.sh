@@ -1,1 +1,0 @@
-alias poe='wine ~/.wine/drive_c/Program\ Files/Grinding\ Gear\ Games/Path\ of\ Exile/PathOfExile.exe'
