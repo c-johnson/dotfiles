@@ -7,6 +7,7 @@ export PATH=$PATH:~/bin
 export PATH=$PATH:$GOPATH/bin
 export BLOG_ROOT=~/ciqss
 export CHOME=github.com/c-johnson/chome
+export CHOST=root@198.199.103.191
 
 # load all .sh files in this directory
 load_files () 
