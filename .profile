@@ -2,6 +2,12 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+export GOPATH=~/gowrk
+export PATH=$PATH:~/bin
+export PATH=$PATH:$GOPATH/bin
+export BLOG_ROOT=~/ciqss
+export CHOME=github.com/c-johnson/chome
+
 # load all .sh files in this directory
 load_files () 
 {
