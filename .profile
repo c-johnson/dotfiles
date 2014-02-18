@@ -9,6 +9,13 @@ export BLOG_ROOT=~/ciqss
 export CHOME=github.com/c-johnson/chome
 export CHOST=root@198.199.103.191
 
+# Find current directory
+# http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in
+cwd () 
+{
+    CWD="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+}
+
 # load all .sh files in this directory
 load_files () 
 {

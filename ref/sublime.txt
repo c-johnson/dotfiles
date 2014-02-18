@@ -1,0 +1,36 @@
+// User preferences
+
+{
+  "file_exclude_patterns":
+  [
+    ".sass-cache",
+    "*.scssc",
+    "*.psd"
+  ],
+  "folder_exclude_patterns":
+  [
+    "bower_components",
+    "bin",
+    ".sass-cache"
+  ],
+  "font_size": 14.0,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "reveal-on-activate": true,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true
+}
+
+// Keyboard shortcuts
+
+[
+  { "keys": ["ctrl+tab"], "command": "next_view" },               // Cycle through tabs in left/right order as opposed to arbitrary
+  { "keys": ["ctrl+shift+tab"], "command": "prev_view" },         // Cycle through tabs in left/right order as opposed to arbitrary
+  { "keys": ["super+."], "command": "reveal_in_side_bar" },       // Opens your current file in the navigator.  Used in conjunction with reveal-on-activate
+  { "keys": ["super+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },    // Custom macro which deletes the current line
+  { "keys": ["super+t"], "command": "find_under_expand" },        // Replacement for what cmd+d currently does, which splits your cursor into multiple 
+  { "keys": ["alt+up"], "command": "swap_line_up" },              // Swaps lines, very useful
+  { "keys": ["alt+down"], "command": "swap_line_down" }           // Swaps lines, very useful
+]
