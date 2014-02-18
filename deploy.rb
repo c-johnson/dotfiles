@@ -34,7 +34,9 @@ if config["name"]
   Net::SSH::start(config["host"], config["name"]) do |ssh|
     ssh.shell do |sh|
       run(sh, "cd #{config["target_dir"]}")
-      run(sh, "git pull origin master")
+      config["cmds"].each do |cmd|
+        run(sh, cmd)
+      end
     end
   end
 end
