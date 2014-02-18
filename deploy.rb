@@ -15,26 +15,26 @@ def load_config(filename)
   end
 end
 
-def pwd(rbox)
-  
+def run(sh, cmd)
+  puts "Running #{cmd} ::"
+  puts "Output from #{cmd} ::"
+  proc = Proc.new { |sh, output| puts output }
+  p = sh.default_process_class.new(sh, cmd, {}, nil)
+  p.on_output &proc
+  p.run
+  proc
 end
 
 config = load_config(".depfile")
 
 if config["name"]
-  puts "Deploying as #{config['name']} (~/.ssh config file)"
+  puts "Deploying as #{config['name']} @ #{config['host']}"
   puts "Target dir is #{config['target_dir']}"
 
   Net::SSH::start(config["host"], config["name"]) do |ssh|
     ssh.shell do |sh|
-      sh.execute "pwd"
-      sh.execute "cd #{config["target_dir"]}"
-      sh.execute "pwd"
+      run(sh, "cd #{config["target_dir"]}")
+      run(sh, "git pull origin master")
     end
   end
-
-  # rbox = Rye::Box.new(config["name"], {safe: false, password_prompt: false})
-  # puts(rbox.execute!("pwd"))
-  # rbox.execute!("cd #{config['target_dir']}")
-  # puts(rbox.execute!("pwd"))
 end
