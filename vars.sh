@@ -8,3 +8,6 @@ export GITH=github.com/c-johnson
 export CHOME=$GITH/chome
 export GOBLOG=$GITH/goblog
 export GOPHURLS=$GITH/gophurls/part1_app
+
+# Generated
+export DRAFT=$GITH/draft
