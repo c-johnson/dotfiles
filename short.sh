@@ -1,5 +1,8 @@
 # Folders
 alias chome="cd ~/proj/chome"
+alias goblog="cd ~/proj/goblog"
+alias not="cd ~/notes"
 alias dot='cd $DOTDIR'
-alias not='cd ~/ciqss'
 alias gow='cd ~/gowrk'
+alias goph='cd /Users/chris/ciqss/gowrk/src/github.com/c-johnson/gophurls/part1_app'
+alias gith='cd $GOPATH/src/$GITH'

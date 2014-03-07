@@ -2,19 +2,16 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-export GOPATH=~/gowrk
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+source $DIR/vars.sh
+
 export PATH=$PATH:~/bin
 export PATH=$PATH:$GOPATH/bin
-export BLOG_ROOT=~/ciqss
-export CHOME=github.com/c-johnson/chome
-export CHOST=root@198.199.103.191
 
 # Find current directory
 # http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in
-cwd () 
-{
-    CWD="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-}
+export DOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # load all .sh files in this directory
 load_files () 
@@ -44,5 +41,4 @@ load_gopath ()
     fi
 }
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 load_files $DIR
