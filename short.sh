@@ -8,4 +8,5 @@ alias goph='cd /Users/chris/ciqss/gowrk/src/github.com/c-johnson/gophurls/part1_
 alias gith='cd $GOPATH/src/$GITH'
 
 # Generated
-alias draft="cd /Users/chris/ciqss/gowrk/src/github.com/c-johnson/draft"
+alias draf="cd /Users/chris/ciqss/gowrk/src/github.com/c-johnson/draft"
+alias jacht="cd /Users/chris/ciqss/gowrk/src/github.com/clayu/jacht"
