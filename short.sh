@@ -10,3 +10,6 @@ alias gith='cd $GOPATH/src/$GITH'
 # Generated
 alias draf="cd $GOPATH/src/github.com/c-johnson/draft"
 alias jacht="cd $GOPATH/src/github.com/clayu/jacht"
+alias bnm="cd /Users/chris/ciqss/gowrk/src/github.com/c-johnson/bnm"
+
+alias bnm="cd /Users/chris/ciqss/gowrk/src/github.com/c-johnson/bnm"
