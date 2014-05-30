@@ -13,7 +13,9 @@ if config["name"]
   puts "Deploying as #{config['name']} @ #{config['host']}"
   puts "Target dir is #{config['target_dir']}"
 
-  Net::SSH::start(config["host"], config["name"]) do |ssh|
+  username = config["use_root"] ? "root" : config["name"]
+
+  Net::SSH::start(config["host"], username) do |ssh|
     ssh.shell do |sh|
       Util.run(sh, "cd #{config["target_dir"]}")
       config["cmds"].each do |cmd|
@@ -21,4 +23,6 @@ if config["name"]
       end
     end
   end
+else
+  puts "There doesn't appear to be a depfile"
 end
