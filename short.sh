@@ -12,11 +12,18 @@ alias dow='cd ~/../Downloads'
 
 alias qa="cd /Users/chris/ciqss/proj/impekable/aruba/quote-app"
 
+# "copy working directory" :: http://stackoverflow.com/a/3482322/376413
+alias cwd="pwd | tr -d '\n' | pbcopy"
+
+# "activate ngrok with custom 'ckj' subdomain"
+alias ngr="ngrok -subdomain=ckj"
+
+# "current directory that I am working in for whatever project I'm on"
+alias cur="signup_app"
+
 alias gob="go install $DRAFT"
 alias got="go test $DRAFT"
 alias gor="go install $DRAFT; draft run"
-
-alias cur="emedcert"
 
 alias resumes="cd ~/../misc/other/resumes"
 
@@ -37,3 +44,11 @@ alias RAD="cd /Users/chris/ciqss/proj/RAD"
 alias emedcert="cd /Users/chris/ciqss/proj/RAD/emedcert"
 
 alias poof="cd /Users/chris/ciqss/proj/poof"
+
+alias cohesity-test="cd /Users/chris/ciqss/proj/cohesity-test"
+
+alias survey-app="cd /Users/chris/ciqss/proj/gainfit/survey-app"
+
+alias signup_app="cd /Users/chris/ciqss/proj/gainfit/signup_app"
+
+alias gainfit="cd /Users/chris/ciqss/proj/gainfit"
