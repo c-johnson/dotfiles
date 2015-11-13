@@ -16,11 +16,11 @@ alias nginr="sudo nginx -s reload"
 alias cwb="git rev-parse --abbrev-ref HEAD | tr -d '\n' | pbcopy"
 
 function gcon {
-  gb | xargs echo | tr -d '*' | awk -v ind="$1" '{system("git checkout " $ind)}';
+  git branch | xargs echo | tr -d '*' | awk -v ind="$1" '{system("git checkout " $ind)}';
 }
 
 function gconc {
-  gb | xargs echo | tr -d '*' | awk -v ind="$1" '{system("git checkout " $ind)}';
+  git branch | xargs echo | tr -d '*' | awk -v ind="$1" '{system("git checkout " $ind)}';
   cwb
 }
 
