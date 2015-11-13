@@ -1,6 +1,6 @@
 # gohome() {
 #   osascript -e 'tell application "System Events" to keystroke "chome"'
-#   osascript -e 'tell application "System Events" to keystroke return'  
+#   osascript -e 'tell application "System Events" to keystroke return'
 # }
 
 cst() {
@@ -30,5 +30,6 @@ alias porst="open http://localhost:9000; newtab revel run $CHOME; grunt watch"
 alias dep='$DOT_DIR/ruby/deploy.rb'
 alias st='$DOT_DIR/ruby/start.rb'
 alias short='$DOT_DIR/ruby/short.rb'
+alias finds='find ! -readable -prune'
 alias bsync='rsync -r /Users/chris/ciqss/proj/chome/public/posts $CHOST:/home/chome/gowrk/src/github.com/c-johnson/chome/public'
 alias dr='docker run ubuntu'
