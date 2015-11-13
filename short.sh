@@ -15,8 +15,17 @@ alias mnot="cd /Users/mmchris/proj/metromile/notes"
 alias nginr="sudo nginx -s reload"
 alias cwb="git rev-parse --abbrev-ref HEAD | tr -d '\n' | pbcopy"
 
-function gcon { gb | xargs echo | tr -d '*' | awk -v ind="$1" '{system("git checkout " $ind)}'; }
+function gcon {
+  gb | xargs echo | tr -d '*' | awk -v ind="$1" '{system("git checkout " $ind)}';
+}
+
+function gconc {
+  gb | xargs echo | tr -d '*' | awk -v ind="$1" '{system("git checkout " $ind)}';
+  cwb
+}
+
 export -f gcon
+export -f gconc
 
 alias qa="cd /Users/chris/ciqss/proj/impekable/aruba/quote-app"
 
