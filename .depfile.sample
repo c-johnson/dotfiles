@@ -1,0 +1,12 @@
+{
+  "name": "landing",
+  "start": {
+    "dir": "/Users/chris/ciqss/proj/spechmonk/landing",
+    "hangs": [
+      "gulp serve"
+    ],
+    "nohangs": [
+      "open http://localhost:9000"
+    ]
+  }
+}

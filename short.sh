@@ -15,6 +15,9 @@ alias fem="cd /Users/mmchris/proj/metromile/frontend-modules"
 alias mnot="cd /Users/mmchris/proj/metromile/notes"
 alias nginr="sudo nginx -s reload"
 alias cwb="git rev-parse --abbrev-ref HEAD | tr -d '\n' | pbcopy"
+alias sut="cd "
+alias koan="cd /Users/chris/ciqss/proj/koanlabs"
+alias genst="cp ~/dotfiles/.depfile.sample ."
 
 function gcon {
   git branch | xargs echo | tr -d '*' | awk -v ind="$1" '{system("git checkout " $ind)}';
@@ -135,3 +138,41 @@ alias mat="cd /Users/mmchris/proj/metromile/mat"
 alias d3-playground="cd /Users/mmchris/proj/d3-playground"
 
 alias decentralize="cd /Users/mmchris/proj/decentralize"
+
+alias rainviz="cd /Users/chris/ciqss/proj/rainviz"
+
+alias friendgineer-web="cd /Users/chris/ciqss/proj/friendgineer-web"
+
+alias browser-laptop="cd /Users/chris/ciqss/proj/brave/browser-laptop"
+
+alias newproj="cd /Users/chris/ciqss/proj/newproj/newproj"
+
+alias notes="cd /Users/chris/ciqss/proj/koanlabs/notes"
+
+alias sutra="cd /Users/chris/ciqss/proj/koanlabs/sutra"
+
+alias koanlabs="cd /Users/chris/ciqss/proj/koanlabs"
+
+alias koanweb="cd /Users/chris/ciqss/proj/koanlabs/koanweb"
+
+alias chome2="cd /Users/chris/ciqss/gowrk/src/github.com/c-johnson/chome2"
+
+alias wiki_chris_fork="cd /Users/chris/ciqss/proj/koanlabs/wiki_chris_fork"
+
+alias diamond-lakeshore="cd /Users/chris/ciqss/proj/diamond-lakeshore"
+
+alias metricsbot="cd /Users/chris/ciqss/proj/koanlabs/metricsbot"
+
+alias landing="cd /Users/chris/ciqss/proj/speechmonk/landing"
+
+alias speechmonk="cd /Users/chris/ciqss/proj/speechmonk"
+
+alias traction="cd /Users/chris/ciqss/proj/traction"
+
+alias urbit-examples="cd /Users/chris/ciqss/proj/urbit-examples"
+
+alias handshake="cd /Users/chris/ciqss/proj/handshake"
+
+alias handshake-app="cd /Users/chris/ciqss/proj/handshake/handshake-app"
+
+alias code-day-sample="cd /Users/chris/ciqss/proj/code-day-sample"
