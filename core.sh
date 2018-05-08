@@ -1,3 +1,8 @@
+### Other Setup ###
+###################
+
+#  1) brew install bash-completion
+
 ### Shell ###
 #############
 
