@@ -30,3 +30,12 @@
   'cmd-;': 'tree-view:reveal-active-file'
   'alt-up': 'editor:move-line-up'
   'alt-down': 'editor:move-line-down'
+
+'atom-workspace':
+  'alt-cmd-/': 'comment-jsx'
+
+'body':
+  'ctrl-tab ^ctrl': 'unset!'
+  'ctrl-tab': 'pane:show-next-item'
+  'ctrl-shift-tab ^ctrl': 'unset!'
+  'ctrl-shift-tab': 'pane:show-previous-item'
