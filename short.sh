@@ -18,6 +18,7 @@ alias cwb="git rev-parse --abbrev-ref HEAD | tr -d '\n' | pbcopy"
 alias sut="cd "
 alias koan="cd /Users/chris/ciqss/proj/koanlabs"
 alias genst="cp ~/dotfiles/.depfile.sample ."
+alias ndot="atom ~/dotfiles ~/notes"
 
 function gcon {
   git branch | xargs echo | tr -d '*' | awk -v ind="$1" '{system("git checkout " $ind)}';
@@ -79,7 +80,7 @@ alias generator-rails-ng="cd /Users/chris/ciqss/proj/generator-rails-ng"
 alias ebolastats="cd /Users/chris/ciqss/proj/ebolastats"
 alias abricate="cd /Users/chris/ciqss/proj/abricate"
 alias dadapp="cd /Users/chris/ciqss/proj/dadweb/dadapp"
-alias urbit="cd /Users/chris/ciqss/proj/urbit"
+alias urb="cd /Users/chris/ciqss/proj/urbit"
 alias mainst="cd /Users/chris/ciqss/proj/dadweb/mainst"
 alias bookmark-cluster="cd /Users/chris/ciqss/proj/bookmark-cluster"
 alias terrafic="cd /Users/chris/ciqss/proj/terrafic"
@@ -176,3 +177,33 @@ alias handshake="cd /Users/chris/ciqss/proj/handshake"
 alias handshake-app="cd /Users/chris/ciqss/proj/handshake/handshake-app"
 
 alias code-day-sample="cd /Users/chris/ciqss/proj/code-day-sample"
+
+alias selenium="cd /Users/chris/ciqss/proj/selenium"
+
+alias smart-unfollow="cd /Users/chris/ciqss/proj/smart-unfollow"
+
+alias vagranttest="cd /Users/chris/ciqss/proj/vagranttest"
+
+alias blogv2="cd /Users/chris/ciqss/proj/blogv2/blogv2"
+
+alias tweetpaint="cd /Users/chris/ciqss/proj/tweetpaint"
+
+alias contenders="cd /Users/chris/ciqss/proj/contenders"
+
+alias decent-blog="cd /Users/chris/ciqss/proj/contenders/decent-blog"
+
+alias piers="cd /Users/chris/ciqss/proj/urbit/piers"
+
+alias piers="cd /Users/chris/ciqss/proj/urbit/piers"
+
+alias urbit-novus="cd /Users/chris/ciqss/proj/urbit/urbit-novus"
+
+alias KoanCoinV0="cd /Users/chris/ciqss/proj/KoanCoinV0"
+
+alias new-twitter="cd /Users/chris/ciqss/proj/newtwitter/new-twitter"
+
+alias urbit-apps="cd /Users/chris/ciqss/proj/urbit/urbit-apps"
+
+alias apps="cd /Users/chris/ciqss/proj/urbit/urbit-apps/apps"
+
+alias core="cd /Users/chris/ciqss/proj/urbit/core"

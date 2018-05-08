@@ -33,3 +33,6 @@ alias short='$DOT_DIR/ruby/short.rb'
 alias finds='find ! -readable -prune'
 alias bsync='rsync -r /Users/chris/ciqss/proj/chome/public/posts $CHOST:/home/chome/gowrk/src/github.com/c-johnson/chome/public'
 alias dr='docker run ubuntu'
+
+# delete backward word
+bind '"\M-d": backward-kill-word'
