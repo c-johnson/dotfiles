@@ -14,11 +14,6 @@ export CHOME=$GITH/chome
 export GOBLOG=$GITH/goblog
 export GOPHURLS=$GITH/gophurls/part1_app
 
-# Gain fitness
-export STRIPE_SECRET_KEY=sk_test_6EjfHuNT7tZweLViRdNhp8lx
-export STRIPE_PUBLISHABLE_KEY=pk_test_clEk47vmPRxga9oB3OFC4YRl
-
-
 # Generated
 export DRAFT=$GITH/draft
 export CAMLI=$GITH/c-johnson

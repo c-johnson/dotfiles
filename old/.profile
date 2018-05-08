@@ -1,3 +1,6 @@
+## TODO:  I think everything in this file is garbage. Leaving it here for posterity for some reason. 
+
+
 # Add ruby virtual manager
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

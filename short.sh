@@ -1,57 +1,25 @@
+## Timeless aliases
+alias dow='cd ~/../Downloads'
 alias proj="cd ~/proj"
-alias goblog="cd ~/proj/goblog"
-alias premier="cd ~/proj/premier/site"
 alias not="cd ~/notes"
-alias note="cd ~/notes; subl ."
-alias dot='cd $DOTDIR'
-alias dote='cd $DOTDIR; subl .'
+alias note="cd ~/notes; atom ."
+alias dot='cd ~/dotfiles'
+alias dote='cd ~/dotfiles atom .'
+alias ngin="cd /usr/local/etc/nginx"
+alias ngr="ngrok -subdomain=ckj"  # "activate ngrok with custom 'ckj' subdomain"
+
+## Specific aliases
 alias gow='cd ~/gowrk'
 alias chome="cd $GOPATH/src/$CHOME"
-alias goph='cd $GOPATH/src/github.com/c-johnson/gophurls/part1_app'
 alias gith='cd $GOPATH/src/$GITH'
-alias dow='cd ~/../Downloads'
-alias fe="cd /Users/mmchris/proj/metromile/frontend"
-alias fem="cd /Users/mmchris/proj/metromile/frontend-modules"
-alias mnot="cd /Users/mmchris/proj/metromile/notes"
-alias nginr="sudo nginx -s reload"
-alias cwb="git rev-parse --abbrev-ref HEAD | tr -d '\n' | pbcopy"
-alias sut="cd "
-alias koan="cd /Users/chris/ciqss/proj/koanlabs"
-alias genst="cp ~/dotfiles/.depfile.sample ."
-alias ndot="atom ~/dotfiles ~/notes"
-
-function gcon {
-  git branch | xargs echo | tr -d '*' | awk -v ind="$1" '{system("git checkout " $ind)}';
-}
-
-function gconc {
-  git branch | xargs echo | tr -d '*' | awk -v ind="$1" '{system("git checkout " $ind)}';
-  cwb
-}
-
-export -f gcon
-export -f gconc
 
 alias qa="cd /Users/chris/ciqss/proj/impekable/aruba/quote-app"
 alias pg="postgres"
 alias samp='cd /Users/chris/misc/programming/sample'
-alias mnote='cd /Users/chris/ciqss/notes/metromile; subl .'
-alias ngin="cd /usr/local/etc/nginx"
-
-# "copy working directory" :: http://stackoverflow.com/a/3482322/376413
-alias cwd="pwd | tr -d '\n' | pbcopy"
-
-# "activate ngrok with custom 'ckj' subdomain"
-alias ngr="ngrok -subdomain=ckj"
-
-# "current directory that I am working in for whatever project I'm on"
-alias cur="cd /Users/chris/ciqss/proj/chome"
 
 alias gob="go install $DRAFT"
 alias got="go test $DRAFT"
 alias gor="go install $DRAFT; draft run"
-
-alias ngin="cd /usr/local/etc/nginx"
 
 alias resumes="cd ~/../misc/other/resumes"
 
