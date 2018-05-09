@@ -1,3 +1,8 @@
+### Other Setup ###
+###################
+
+#  1) brew install bash-completion
+
 ### Shell ###
 #############
 
@@ -8,17 +13,34 @@ alias reload='source ~/.bash_profile'
 alias finds='find ! -readable -prune'
 alias cwb="git rev-parse --abbrev-ref HEAD | tr -d '\n' | pbcopy"
 alias cwd="pwd | tr -d '\n' | pbcopy"  # "copy working directory" :: http://stackoverflow.com/a/3482322/376413
-
-## Common programs
 alias nginr="sudo nginx -s reload"
+bind '"\M-d": backward-kill-word'  # cmd + backspace deletes whole word in terminal
 
-## Shell helpers
-bind '"\M-d": backward-kill-word'
+## Timeless aliases
+alias dow='cd ~/../Downloads'
+alias proj="cd ~/proj"
+alias not="cd ~/notes"
+alias note="cd ~/notes; atom ."
+alias dot='cd ~/dotfiles'
+alias dote='cd ~/dotfiles atom .'
+alias ngin="cd /usr/local/etc/nginx"
+alias ngr="ngrok -subdomain=ckj"  # "activate ngrok with custom 'ckj' subdomain"
 
 ## Ruby scripts
-alias dep='$DOT_DIR/ruby/deploy.rb'
-alias st='$DOT_DIR/ruby/start.rb'
-alias short='$DOT_DIR/ruby/short.rb'
+alias dep='~/dotfiles/ruby/deploy.rb'
+alias st='~/dotfiles/ruby/start.rb'
+alias short='~/dotfiles/ruby/short.rb'
+
+### Atom ###
+############
+
+# See samples/atom.sample
+
+### Git ###
+############
+
+# Git branch autocomplete:  TODO
+# Git config:  See gitconfig.sample in dotfiles directory
 
 ## Additional git commands
 alias gpush='git push origin'
@@ -57,14 +79,3 @@ for al in `__git_aliases`; do
 
   flow_complete_func=_git_$(__git_aliased_command $al)
 done
-
-### Atom ###
-############
-
-# See samples/atom.sample
-
-### Git ###
-############
-
-# Git branch autocomplete:  TODO
-# Git config:  See gitconfig.sample in dotfiles directory

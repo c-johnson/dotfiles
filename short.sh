@@ -1,13 +1,3 @@
-## Timeless aliases
-alias dow='cd ~/../Downloads'
-alias proj="cd ~/proj"
-alias not="cd ~/notes"
-alias note="cd ~/notes; atom ."
-alias dot='cd ~/dotfiles'
-alias dote='cd ~/dotfiles atom .'
-alias ngin="cd /usr/local/etc/nginx"
-alias ngr="ngrok -subdomain=ckj"  # "activate ngrok with custom 'ckj' subdomain"
-
 ## Specific aliases
 alias gow='cd ~/gowrk'
 alias chome="cd $GOPATH/src/$CHOME"
