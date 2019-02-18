@@ -19,8 +19,8 @@ bind '"\M-d": backward-kill-word'  # cmd + backspace deletes whole word in termi
 ## Timeless aliases
 alias dow='cd ~/../Downloads'
 alias proj="cd ~/proj"
-alias not="cd ~/notes"
-alias note="cd ~/notes; atom ."
+# alias not="cd ~/notes"
+# alias note="cd ~/notes; atom ."
 alias dot='cd ~/dotfiles'
 alias dote='cd ~/dotfiles atom .'
 alias ngin="cd /usr/local/etc/nginx"

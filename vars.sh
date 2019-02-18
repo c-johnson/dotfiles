@@ -7,8 +7,6 @@ export TODO_DIR=~/todo
 
 export CHOST=chome@198.199.103.191
 
-export DOCKER_HOST=tcp://127.0.0.1:4243
-
 export GITH=github.com/c-johnson
 export CHOME=$GITH/chome
 export GOBLOG=$GITH/goblog
