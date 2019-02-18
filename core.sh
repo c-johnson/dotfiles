@@ -2,6 +2,11 @@
 ###################
 
 #  1) brew install bash-completion
+#  2) iTerm2
+#     -> preferences, profile, <profile>, Keys
+#     find "option ->", set escape sequence to "f"
+#     find "option <-", set escape sequence to "b"
+#     add  "option DELETE", set hex code to "0x1B 0x08"
 
 ### Shell ###
 #############
