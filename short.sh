@@ -2,6 +2,7 @@
 alias gow='cd ~/gowrk'
 alias chome="cd ~/proj/tesuji/core/cjohnson.io"
 alias gith='cd $GOPATH/src/$GITH'
+alias urb="cd ~/proj/urbit/core"
 
 alias qa="cd /Users/chris/ciqss/proj/impekable/aruba/quote-app"
 alias pg="postgres"

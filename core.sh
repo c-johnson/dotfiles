@@ -20,6 +20,7 @@ alias cwb="git rev-parse --abbrev-ref HEAD | tr -d '\n' | pbcopy"
 alias cwd="pwd | tr -d '\n' | pbcopy"  # "copy working directory" :: http://stackoverflow.com/a/3482322/376413
 alias nginr="sudo nginx -s reload"
 bind '"\M-d": backward-kill-word'  # cmd + backspace deletes whole word in terminal
+alias path="echo \"${PATH//:/$'\n'}\""
 
 ## Timeless aliases
 alias dow='cd ~/../Downloads'
