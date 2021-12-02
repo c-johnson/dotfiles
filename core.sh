@@ -11,6 +11,15 @@
 ### Shell ###
 #############
 
+alias gco="git checkout"
+alias gb="git branch"
+alias gcm="git commit -m"
+alias grh="git reset --hard HEAD"
+alias npmd="docker-compose run --rm web-client npm"
+alias doc="docker-compose"
+alias doct="docker-compose run --rm web-client npm test"
+alias webc="cd ~/proj/sourcetable/sourcetable-site/web-client"
+
 ## Shell aliases
 alias ll='ls -lagh'
 alias llt='ls -laght'
@@ -25,7 +34,8 @@ alias path="echo \"${PATH//:/$'\n'}\""
 ## Timeless aliases
 alias dow='cd ~/../Downloads'
 alias proj="cd ~/proj"
-# alias not="cd ~/notes"
+alias not="cd ~/home/notes"
+alias home="cd ~/home"
 # alias note="cd ~/notes; atom ."
 alias dot='cd ~/dotfiles'
 alias dote='cd ~/dotfiles atom .'
@@ -52,6 +62,7 @@ alias short='~/dotfiles/ruby/short.rb'
 alias gpush='git push origin'
 alias gpull='git pull origin'
 alias gca='git commit -am "some commit"'
+alias gs="git status"
 
 function gcon {
   git branch | xargs echo | tr -d '*' | awk -v ind="$1" '{system("git checkout " $ind)}';

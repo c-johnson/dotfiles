@@ -3,6 +3,8 @@ alias gow='cd ~/gowrk'
 alias chome="cd ~/proj/tesuji/core/cjohnson.io"
 alias gith='cd $GOPATH/src/$GITH'
 alias urb="cd ~/proj/urbit/core"
+alias st="cd ~/proj/sourcetable"
+alias stsite="cd ~/proj/sourcetable/sourcetable-site"
 
 alias qa="cd /Users/chris/ciqss/proj/impekable/aruba/quote-app"
 alias pg="postgres"
@@ -20,6 +22,7 @@ alias jacht="cd $GOPATH/src/github.com/clayu/jacht"
 alias bnm="cd /Users/chris/ciqss/gowrk/src/github.com/c-johnson/bnm"
 alias camli="cd /Users/chris/ciqss/gowrk/src/github.com/c-johnson/camlistore"
 
+alias funot='cd ~/home/notes/futo'
 alias crm="cd /Users/chris/ciqss/proj/crm"
 alias quote-app="cd /Users/chris/ciqss/proj/impek/aruba/quote-app"
 alias test-app="cd /Users/chris/ciqss/proj/test-app"
